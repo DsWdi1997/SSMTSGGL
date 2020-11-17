@@ -21,7 +21,7 @@ public class BookController {
     private BookService bookService;
 
     // 展示全部的书籍
-    @RequestMapping(value = "/allBook1")
+    @RequestMapping(value = "/allBook")
     public String list(Model model){
         List<BooK> list = bookService.queryAllBook();
         model.addAttribute("list",list);
